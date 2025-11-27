@@ -1,0 +1,15 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class botoesMenu : MonoBehaviour
+{
+    public void IniciarJogo()
+    {
+        SceneManager.LoadScene("Jogo");
+    }
+
+    public void SairDoJogo()
+    {
+        Application.Quit();
+    }
+}
