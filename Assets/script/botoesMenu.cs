@@ -12,4 +12,10 @@ public class botoesMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void VoltarProMenu()
+    {
+        Scene.Manager.LoadScene("Menu");
+    }
+
 }
