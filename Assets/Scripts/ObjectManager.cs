@@ -16,11 +16,16 @@ public class ObjectManager : MonoBehaviour
     public GameObject spawnObject;
 
     [SerializeField] Timer meuTimer;
+    
+    void start()
+    {
+        clickCount = 0;
+    }
 
     // Método para clique no objeto principal
     void OnMouseDown()
     {
-        if (acabou == false) {
+        if (meuTimer.acabou == false) {
             // Aumenta o valor da variável de contagem
         clickCount++;
 

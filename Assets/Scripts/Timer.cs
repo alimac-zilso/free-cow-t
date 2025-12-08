@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
@@ -35,6 +36,7 @@ public class Timer : MonoBehaviour
             textoTimer.color = Color.red;
             acabou = true;
             Time.timeScale = 0;
+
             Transform filho = transform.Find(TelaPraEsconder);
             filho.gameObject.SetActive(true);
         }
